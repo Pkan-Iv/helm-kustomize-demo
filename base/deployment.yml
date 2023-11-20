@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helm-chart-demo
+  namespace: default
+  labels:
+    app: helm-chart-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helm-chart-demo
+  template:
+    metadata:
+      labels:
+        app: helm-chart-demo
+    spec:
+      containers:
+      - name: helm-chart-demo
+        image: registry-k8s-fr-301.hostics.fr/helm-chart-demo
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8082
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"

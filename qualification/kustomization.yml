@@ -1,8 +1,7 @@
 resources:
 - ../../base
-images:
-  - newTag: 1.0.0
-patchesStrategicMerge:
   - service.yml
   - namespace.yml
+images:
+  - newTag: 1.0.0
 namePrefix: qual-

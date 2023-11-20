@@ -5,3 +5,4 @@ resources:
 images:
   - newTag: 1.0.0
 namePrefix: qual-
+namespace: qualification

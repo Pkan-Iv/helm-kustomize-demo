@@ -1,7 +1,7 @@
 resources:
-  - ../../base
-  - service.yml
-  - namespace.yml
+- ../../base
+- service.yml
+- namespace.yml
 images:
   - newTag: 1.0.0
 namePrefix: qual-

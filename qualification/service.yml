@@ -4,8 +4,9 @@ kind: Service
 metadata:
   name: helm-chart-demo
 spec:
+  selector:
+    app: helm-chart-demo
   type: NodePort
   ports:
   - nodePort: 30083
     port: 8082
-  $patch: replace

@@ -2,11 +2,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: qual-helm-chart-demo
+  name: helm-chart-demo
 spec:
   selector:
-    app: qual-helm-chart-demo
+    app: helm-chart-demo
   type: NodePort
   ports:
   - nodePort: 30083
     port: 8082
+  $patch: replace

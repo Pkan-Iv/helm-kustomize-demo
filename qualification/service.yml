@@ -6,4 +6,4 @@ metadata:
 spec:
   ports:
   - nodePort: 30083
-    port: 8082
+  $patch: replace

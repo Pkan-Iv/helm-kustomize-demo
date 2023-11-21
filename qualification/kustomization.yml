@@ -1,9 +1,8 @@
 resources:
 - ../base
 - namespace.yml
+- service.yml
 images:
   - newTag: 1.0.0
 namePrefix: qual-
 namespace: qualification
-patchesStrategicMerge:
-- service.yml
